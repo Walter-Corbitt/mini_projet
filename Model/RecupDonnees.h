@@ -16,7 +16,10 @@
 using namespace std;
 
 class RecupDonnees : public QWidget{
-
+    Q_OBJECT
+    QNetworkAccessManager networkManager;
+    QNetworkRequest request;
+    QNetworkReply* currentReply;
 private :
 
 public :
