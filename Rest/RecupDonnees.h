@@ -24,7 +24,6 @@ private :
 
 public :
     RecupDonnees(QUrl url);
-    map <Qstring, Qstring> pays;
     void sendRequest();
 
 
