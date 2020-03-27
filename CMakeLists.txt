@@ -1,10 +1,12 @@
-# cmake_minimum_required(VERSION <specify CMake version here>)
+set(CMAKE_AUTOMOC ON)
+cmake_minimum_required(VERSION 13)
 project(mini_projet)
 
-set(CMAKE_CXX_STANDARD 14 )
+set(CMAKE_CXX_STANDARD 13.5.3)
 
-find_package(Qt5Widgets REQUIRED)
-set(CMAKE_PREFIX_PATH "C:\\Qt\\Qt5.14.0\\5.14.0\\mingw73_32\\")
-
-add_executable(mini_projet main.cpp Rest/RecupDonnees.cpp Rest/RecupDonnees.h Model/Modele.cpp Model/Modele.h)
-
+set(CMAKE_PREFIX_PATH "C:\\Qt\\5.12.2\\mingw73_64\\")
+find_package(Qt5Widgets)
+find_package(Qt5Network)
+SET(QT_USE_QTNETWORK true)
+INCLUDE_DIRECTORIES(${QT_QTNETWORK_INCLUDE_DIR})
+add_executable(mini_projet main.cpp Rest/RecupDonnees.cpp Rest/RecupDonnees.h Model/Model.cpp Model/Model.h)
