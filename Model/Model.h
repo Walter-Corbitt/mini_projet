@@ -10,17 +10,19 @@
 class Model {
 
 public :
+    Qmap <Qstring, Qstring> InfosPays;
 
     Model();
 
     class pays(InfosPays);
     class flag(InfosPays);
 
-    virtual Qmap <Qstring, pays> DevinePays;
-    virtual Qmap <Qstring, flag> DevineFlag;
+    Qstring paysChoisi;
+    Qstring flagChoisi;
 
-    Qmap <Qstring, Qstring> InfosPays;
-
+    virtual Qmap <flagChoisi, pays> DevinePays;
+    virtual Qmap <paysChoisi, flag> DevineFlag;
+    
 };
 
 
