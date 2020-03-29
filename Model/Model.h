@@ -5,17 +5,21 @@
 #ifndef MINI_PROJET_MODELE_H
 #define MINI_PROJET_MODELE_H
 #include <string>
+#include "../Rest/RecupDonnees.h"
 
 class Model {
 
-private :
-
 public :
-    map <string, string> InfosPays;
 
     Model();
-    string randomPays;
-    string randomCode;
+
+    class pays(InfosPays);
+    class flag(InfosPays);
+
+    virtual Qmap <Qstring, pays> DevinePays;
+    virtual Qmap <Qstring, flag> DevineFlag;
+
+    Qmap <Qstring, Qstring> InfosPays;
 
 };
 
