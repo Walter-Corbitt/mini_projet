@@ -6,22 +6,18 @@
 #define MINI_PROJET_MODELE_H
 #include <string>
 #include "../Rest/RecupDonnees.h"
+using namespace std;
 
 class Model {
 
 public :
-    Qmap <Qstring, Qstring> InfosPays;
 
     Model();
 
-    class pays(InfosPays);
-    class flag(InfosPays);
+    Qmap <Qstring, Qstring> InfosPays;
 
-    Qstring paysChoisi;
-    Qstring flagChoisi;
-
-    virtual Qmap <flagChoisi, pays> DevinePays;
-    virtual Qmap <paysChoisi, flag> DevineFlag;
+    Qmap <Qstring, Qvector<Qstring>> DevinePays;
+    Qmap <Qstring, Qvector<Qstring>> DevineFlag;
     
 };
 
