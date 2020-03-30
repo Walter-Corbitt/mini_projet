@@ -18,6 +18,7 @@ public :
 
     Qmap <Qstring, Qvector<Qstring>> DevinePays;
     Qmap <Qstring, Qvector<Qstring>> DevineFlag;
+
     
 };
 
