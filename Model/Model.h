@@ -5,6 +5,9 @@
 #ifndef MINI_PROJET_MODELE_H
 #define MINI_PROJET_MODELE_H
 #include <string>
+#include <map>
+#include <QtCore/QString>
+#include <QtWidgets/QProgressDialog>
 #include "../Rest/RecupDonnees.h"
 using namespace std;
 
@@ -12,14 +15,13 @@ class Model {
 
 public :
 
-    Model();
+    static map<QString,QString> codetopays;  //correspondance codepays -> nompays
+    static map<QString,QString> paystocode; //correspondance nompays->codepays
+    static map<int ,QString> listcode; //plus pratique pour les tirages aléatoires
+    static int loadprogress; //barre de progression
+    static map<QString,QImage> listeimage; //Les immages sont préchargées dans cette map
+    static vector<QString> drapeauxquizz; //l'ensemble des drapeaux du quizz
 
-    Qmap <Qstring, Qstring> InfosPays;
-
-    Qmap <Qstring, Qvector<Qstring>> DevinePays;
-    Qmap <Qstring, Qvector<Qstring>> DevineFlag;
-
-    
 };
 
 
