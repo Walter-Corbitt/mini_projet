@@ -7,6 +7,8 @@
 #include <string>
 #include <map>
 #include <QtCore/QString>
+#include "ClientRest.h"
+
 using namespace std;
 
 class Modele {
@@ -24,7 +26,7 @@ class Modele {
 
     void Recuperation_Data();
     void Stockage_Pays();
-    
+
 };
 
 
