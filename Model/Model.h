@@ -4,11 +4,10 @@
 
 #ifndef MINI_PROJET_MODELE_H
 #define MINI_PROJET_MODELE_H
-#include <string>
+#include <Qstring>
 #include <map>
 #include <QtCore/QString>
 #include <QtWidgets/QProgressDialog>
-#include "../Rest/RecupDonnees.h"
 using namespace std;
 
 class Model {
