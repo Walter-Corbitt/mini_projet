@@ -1,6 +1,7 @@
+set(CMAKE_AUTOMOC ON)
 cmake_minimum_required(VERSION 3.15)
 project(testgitsn2)
-
 set(CMAKE_CXX_STANDARD 14)
-
-add_executable(testgitsn2 main.cpp)
+find_package(Qt5Widgets)
+add_executable(testgitsn2 main.cpp ClientRest.cpp ClientRest.h Modele.cpp Modele.h)
+target_link_libraries(testgitsn2 Qt5::Widgets)
